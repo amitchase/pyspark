@@ -5,7 +5,7 @@ if __name__ == '__main__':
     spark = SparkSession \
         .builder \
         .appName("HelloSpark") \
-        .master("local[2]") \
+        .master("local[*]") \
         .getOrCreate()
 
     data_list = [("imdadul", 34),
